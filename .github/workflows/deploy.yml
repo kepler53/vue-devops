@@ -33,13 +33,13 @@ jobs:
 
       - name: Install dependpendcies
         run: yarn install
-        
+
       - name: Build page
         run: yarn build
         env:
           NODE_ENV: production 
       
-      -name: Deploy to gh-pages
+      - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-agpes@v3
       with:
           github_token: ${{scretes.GIBHUB_TOKEN}}
