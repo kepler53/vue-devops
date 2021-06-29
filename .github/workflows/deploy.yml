@@ -40,8 +40,8 @@ jobs:
           NODE_ENV: production 
       
       - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-agpes@v3
-      with:
+        uses: peaceiris/actions-gh-agpes@v3
+        with:
           github_token: ${{scretes.GIBHUB_TOKEN}}
           publish_dir: ./dist
 
