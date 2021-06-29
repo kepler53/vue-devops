@@ -42,7 +42,7 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-agpes@v3
         with:
-          github_token: ${{scretes.GIBHUB_TOKEN}}
+          github_token: ${{secrets.GIBHUB_TOKEN}}
           publish_dir: ./dist
 
       # # Runs a single command using the runners shell
